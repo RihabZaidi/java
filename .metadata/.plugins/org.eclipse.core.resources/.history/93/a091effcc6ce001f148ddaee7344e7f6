@@ -1,0 +1,35 @@
+package exercice1;
+
+public class Account { 
+	private double balance;
+	
+	
+	
+	public Account() {
+		balance = 0;
+	}
+	public Account(double balanceInitial){
+    	balance = balanceInitial;
+    }
+   public double getBalance() {
+	   return balance;
+   }
+	public void deposer(double montant) {
+	   balance += montant;	
+	}
+	public void retirer(double montant) {
+		balance -= montant;
+	}
+	public void ajouter_interet(double taux){
+		balance = balance*(1+taux);
+		
+	}
+	public  void main( String [] args) {
+		Account a = new Account(1000);
+		
+		a.deposer(2000);
+		a.retirer(1000);
+		a.ajouter_interet(200);
+		a.getBalance();}
+	
+}

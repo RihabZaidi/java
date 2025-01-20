@@ -1,0 +1,19 @@
+package javaCours;
+
+public class Main {
+
+	public static void main(String[] args) {
+		String name  = "bro";
+		int age = 26;
+        hello(name,age);	
+      }
+	
+	
+	
+	
+	static void hello(String v,int x) {
+		System.out.println("hello "+ v);
+		System.out.println("hello "+ x);
+	}
+}
+
